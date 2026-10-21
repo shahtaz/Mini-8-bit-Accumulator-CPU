@@ -1,0 +1,7 @@
+vhdl work "Z_FLAG.vhd"
+vhdl work "ROM.vhd"
+vhdl work "PC.vhd"
+vhdl work "CONTROL_UNIT.vhd"
+vhdl work "ALU.vhd"
+vhdl work "ACC.vhd"
+vhdl work "TOP_L_CPU.vhd"

@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -13,11 +12,8 @@ entity ACC is
 end ACC;
 
 architecture Behavioral of ACC is
-
     signal acc_reg : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
-
 begin
-
     process(CLK)
     begin
         if rising_edge(CLK) then
@@ -30,5 +26,4 @@ begin
     end process;
 
     ACC_OUT <= acc_reg;
-
-end Behavioral;
+end Behavioral;

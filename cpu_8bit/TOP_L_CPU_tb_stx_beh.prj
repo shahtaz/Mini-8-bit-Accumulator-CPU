@@ -1,0 +1,8 @@
+vhdl isim_temp "Z_FLAG.vhd"
+vhdl isim_temp "ROM.vhd"
+vhdl isim_temp "PC.vhd"
+vhdl isim_temp "CONTROL_UNIT.vhd"
+vhdl isim_temp "ALU.vhd"
+vhdl isim_temp "ACC.vhd"
+vhdl isim_temp "TOP_L_CPU.vhd"
+vhdl isim_temp "TOP_L_CPU_tb.vhd"

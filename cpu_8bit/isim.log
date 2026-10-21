@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ise/final/cpu_8bit/ACC_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/final/cpu_8bit/ACC_tb_isim_beh.wdb 
+Running: /home/ise/final/cpu_8bit/TOP_L_CPU_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/final/cpu_8bit/TOP_L_CPU_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -13,4 +13,14 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+at 51 ns: Note: PASS: Cycle 0: RESET  ACC=0x00 Z='1' NextPC=0x0 (/top_l_cpu_tb/).
+at 151 ns: Note: PASS: Cycle 1: LDI 0xFF  ACC=0xFF Z='0' NextPC=0x1 (/top_l_cpu_tb/).
+at 251 ns: Note: PASS: Cycle 2: NOT  ACC=0x00 Z='1' NextPC=0x2 (/top_l_cpu_tb/).
+at 351 ns: Note: PASS: Cycle 3: JZ 0x05 (taken)  ACC=0x00 Z='1' NextPC=0x5 (/top_l_cpu_tb/).
+at 451 ns: Note: PASS: Cycle 4: ADD 0x11  ACC=0x11 Z='0' NextPC=0x6 (/top_l_cpu_tb/).
+at 551 ns: Note: PASS: Cycle 5: SHL  ACC=0x22 Z='0' NextPC=0x7 (/top_l_cpu_tb/).
+at 651 ns: Note: PASS: Cycle 6: JZ 0x00 (not taken)  ACC=0x22 Z='0' NextPC=0x8 (/top_l_cpu_tb/).
+at 751 ns: Note: PASS: Cycle 7: SHL  ACC=0x44 Z='0' NextPC=0x9 (/top_l_cpu_tb/).
+at 851 ns: Note: PASS: Cycle 8: NOP (unused address 9)  ACC=0x44 Z='0' NextPC=0xA (/top_l_cpu_tb/).
+at 851 ns: Note: ALL TESTS PASSED: TOP_L_CPU Set 9 program verified. (/top_l_cpu_tb/).
 # exit 0

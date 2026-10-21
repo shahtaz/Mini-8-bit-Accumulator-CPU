@@ -1,21 +1,34 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/final/cpu_8bit/ACC_tb_isim_beh.exe -prj /home/ise/final/cpu_8bit/ACC_tb_beh.prj work.ACC_tb 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/final/cpu_8bit/TOP_L_CPU_tb_isim_beh.exe -prj /home/ise/final/cpu_8bit/TOP_L_CPU_tb_beh.prj work.TOP_L_CPU_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/final/cpu_8bit/Z_FLAG.vhd" into library work
+Parsing VHDL file "/home/ise/final/cpu_8bit/ROM.vhd" into library work
+Parsing VHDL file "/home/ise/final/cpu_8bit/PC.vhd" into library work
+Parsing VHDL file "/home/ise/final/cpu_8bit/CONTROL_UNIT.vhd" into library work
+Parsing VHDL file "/home/ise/final/cpu_8bit/ALU.vhd" into library work
 Parsing VHDL file "/home/ise/final/cpu_8bit/ACC.vhd" into library work
-Parsing VHDL file "/home/ise/final/cpu_8bit/ACC_tb.vhd" into library work
+Parsing VHDL file "/home/ise/final/cpu_8bit/TOP_L_CPU.vhd" into library work
+Parsing VHDL file "/home/ise/final/cpu_8bit/TOP_L_CPU_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 95300 KB
-Fuse CPU Usage: 810 ms
+Fuse Memory Usage: 97064 KB
+Fuse CPU Usage: 830 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture behavioral of entity ROM [rom_default]
+Compiling architecture behavioral of entity CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity ALU [alu_default]
 Compiling architecture behavioral of entity ACC [acc_default]
-Compiling architecture behavior of entity acc_tb
+Compiling architecture behavioral of entity Z_FLAG [z_flag_default]
+Compiling architecture behavioral of entity TOP_L_CPU [top_l_cpu_default]
+Compiling architecture behavior of entity top_l_cpu_tb
 Time Resolution for simulation is 1ps.
-Compiled 5 VHDL Units
-Built simulation executable /home/ise/final/cpu_8bit/ACC_tb_isim_beh.exe
-Fuse Memory Usage: 103956 KB
-Fuse CPU Usage: 830 ms
-GCC CPU Usage: 90 ms
+Compiled 18 VHDL Units
+Built simulation executable /home/ise/final/cpu_8bit/TOP_L_CPU_tb_isim_beh.exe
+Fuse Memory Usage: 111760 KB
+Fuse CPU Usage: 880 ms
+GCC CPU Usage: 200 ms

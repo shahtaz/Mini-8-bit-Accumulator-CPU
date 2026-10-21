@@ -1,6 +1,5 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
 
 entity ROM is
     Port (
@@ -10,24 +9,21 @@ entity ROM is
 end ROM;
 
 architecture Behavioral of ROM is
-
 begin
-
+    -- Set 9 program (Appendix B)
     process(ADDRESS)
     begin
         case ADDRESS is
-            when "0000" => INSTRUCTION <= x"1FF"; -- LDI FF
-            when "0001" => INSTRUCTION <= x"700"; -- NOT
-            when "0010" => INSTRUCTION <= x"C05"; -- JZ 05
-            when "0011" => INSTRUCTION <= x"277"; -- ADD 77
-            when "0100" => INSTRUCTION <= x"277"; -- ADD 77
-            when "0101" => INSTRUCTION <= x"211"; -- ADD 11
-            when "0110" => INSTRUCTION <= x"800"; -- SHL
-            when "0111" => INSTRUCTION <= x"C00"; -- JZ 00
-            when "1000" => INSTRUCTION <= x"800"; -- SHL
-
-            when others => INSTRUCTION <= x"000"; -- Unused addresses
+            when "0000" => INSTRUCTION <= x"1FF"; -- 0: LDI 0xFF
+            when "0001" => INSTRUCTION <= x"700"; -- 1: NOT
+            when "0010" => INSTRUCTION <= x"C05"; -- 2: JZ  0x05
+            when "0011" => INSTRUCTION <= x"277"; -- 3: ADD 0x77 (skipped)
+            when "0100" => INSTRUCTION <= x"277"; -- 4: ADD 0x77 (skipped)
+            when "0101" => INSTRUCTION <= x"211"; -- 5: ADD 0x11
+            when "0110" => INSTRUCTION <= x"800"; -- 6: SHL
+            when "0111" => INSTRUCTION <= x"C00"; -- 7: JZ  0x00
+            when "1000" => INSTRUCTION <= x"800"; -- 8: SHL
+            when others => INSTRUCTION <= x"000"; -- NOP
         end case;
     end process;
-
 end Behavioral;

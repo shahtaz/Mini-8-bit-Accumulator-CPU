@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ise/final/cpu_8bit/ACC_tb_isim_beh.exe" -prj "/home/ise/final/cpu_8bit/ACC_tb_beh.prj" "work.ACC_tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/final/cpu_8bit/TOP_L_CPU_tb_isim_beh.exe" -prj "/home/ise/final/cpu_8bit/TOP_L_CPU_tb_beh.prj" "work.TOP_L_CPU_tb" 
