@@ -1,0 +1,2 @@
+vhdl isim_temp "Z_FLAG.vhd"
+vhdl isim_temp "Z_FLAG_tb.vhd"

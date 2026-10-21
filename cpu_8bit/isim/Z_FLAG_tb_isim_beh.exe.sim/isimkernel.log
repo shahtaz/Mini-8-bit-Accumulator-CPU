@@ -1,0 +1,10 @@
+Command line:
+   Z_FLAG_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57640
+
+Wed Oct 21 16:35:54 2026
+
+
+ Elaboration Time: 0.03 sec

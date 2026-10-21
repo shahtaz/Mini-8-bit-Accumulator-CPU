@@ -1,0 +1,2 @@
+vhdl work "Z_FLAG.vhd"
+vhdl work "Z_FLAG_tb.vhd"
